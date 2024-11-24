@@ -19,7 +19,7 @@ https://github.com/telegramdesktop/tdesktop/blob/master/LEGAL
 namespace Ui {
 namespace {
 
-constexpr auto kCachedCornerRadiusCount = int(CachedCornerRadius::kCount);
+constexpr auto kCachedCornerRadiusCount = int(0);
 
 std::vector<CornersPixmaps> Corners;
 QImage CornersMaskLarge[4], CornersMaskSmall[4];
