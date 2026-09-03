@@ -7,7 +7,6 @@ on:
 jobs:
   macos:
     name: macOS (x86_64)
-
     runs-on: macos-15-intel
     strategy:
       matrix:
@@ -27,8 +26,6 @@ jobs:
       - name: First set up.
         run: |
           sudo chown -R `whoami`:admin /usr/local/share
-          brew update
-          brew upgrade || true
           brew install automake libtool meson nasm ninja pkg-config
           sudo mdutil -a -i off
           sudo xcode-select -s /Applications/Xcode.app/Contents/Developer
